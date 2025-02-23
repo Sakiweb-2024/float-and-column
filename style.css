@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    padding: 1em;
+}
+.left{
+    float: left;
+    margin-right: 1rem;
+
+}
+.right{
+    float: right;
+    margin: 1rem;
+}
+/* to clear the second paragraph */
+.root{
+    clear:both;
+}
+section{
+    background-color:bisque;
+    padding: 1em;
+    border: 1px solid #333;
+    /* old version  */
+    /* overflow: auto; */
+
+    /* the new version  */
+    display: flow-root;
+}
+
+/* column */
+ .main{
+    margin: 1rem;
+    padding: 1em;
+    border: 1px solid #333;
+ }
+.main{
+    column-count: 4;
+    column-width: 150px;
+}
